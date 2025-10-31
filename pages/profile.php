@@ -364,7 +364,7 @@ if (isset($_GET['delete_post'])) {
                                     </div>
 
                                     <div class="post-actions">
-                                        <a href="pages/view_problem.php?problem_id=<?php echo $post['id']; ?>" class="btn-view">
+                                        <a href="view_problem.php?problem_id=<?php echo $post['id']; ?>" class="btn-view">
                                             <i class="fas fa-comments"></i> View Solutions
                                         </a>
                                     </div>
