@@ -194,7 +194,7 @@ function getSolutionReplies($conn, $solution_id) {
         <nav class="sidebar" id="sidebar">
             <div class="sidebar-header">
                 <div class="logo">
-                    <i class="fas fa-layer-group"></i>
+                    <img src="../logo/m-blues.png" alt="MUFFEIA" class="logo-image">
                     <span>MUFFEIA</span>
                 </div>
                 <button class="sidebar-close" id="sidebarClose">

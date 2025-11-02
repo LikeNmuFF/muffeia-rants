@@ -346,9 +346,7 @@ function getStatusText($is_online, $last_seen) {
                 <div class="top-nav-content">
                     <h1>Messages</h1>
                     <div class="user-actions">
-                        <button class="icon-btn search-btn">
-                            <i class="fas fa-search"></i>
-                        </button>
+                       
                         <a href="notifications.php" class="icon-btn notification-btn" role="button">
                             <i class="fas fa-bell"></i>
                             <span class="notification-dot" style="display: none;"></span>

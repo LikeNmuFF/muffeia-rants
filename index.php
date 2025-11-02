@@ -173,9 +173,8 @@ $has_more = ($offset + $limit) < $total_posts;
                 <div class="top-nav-content">
                     <h1>Welcome to Muffeia!</h1>
                     <div class="user-actions">
-                        <button class="icon-btn search-btn">
-                            <i class="fas fa-search"></i>
-                        </button>
+                        <a href="pages/message.php" class="icon-btn message-btn" role="button">
+                            <i class="fas fa-envelope"></i>
                         <a href="pages/notifications.php" class="icon-btn notification-btn" role="button">
                             <i class="fas fa-bell"></i>
                             <span class="notification-dot" style="display: none;"></span>

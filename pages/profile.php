@@ -200,9 +200,8 @@ if (isset($_GET['delete_post'])) {
                 <div class="top-nav-content">
                     <h1>Your Profile</h1>
                     <div class="user-actions">
-                        <button class="icon-btn search-btn">
-                            <i class="fas fa-search"></i>
-                        </button>
+                        <a href="message.php" class="icon-btn message-btn" role="button">
+                            <i class="fas fa-envelope"></i>
                         <a href="notifications.php" class="icon-btn notification-btn">
                             <i class="fas fa-bell"></i>
                             <span class="notification-dot"></span>

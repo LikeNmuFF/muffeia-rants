@@ -128,7 +128,6 @@ $initial_class = $is_register_mode ? 'register-mode' : '';
 
         body {
             background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
-            /* UPDATED: Changed min-height to height and added overflow */
             height: 100vh;
             overflow: hidden; 
             display: flex;
@@ -172,11 +171,9 @@ $initial_class = $is_register_mode ? 'register-mode' : '';
             box-shadow: var(--shadow-lg);
             position: relative;
             z-index: 1;
-            
-            /* UPDATED: Make container a flex column and limit its height */
             display: flex;
             flex-direction: column;
-            max-height: calc(100vh - 40px); /* 100vh minus body padding (20px * 2) */
+            max-height: calc(100vh - 40px);
         }
 
         .tabs {
@@ -184,7 +181,6 @@ $initial_class = $is_register_mode ? 'register-mode' : '';
             background: #f1f5f9;
             padding: 6px;
             gap: 4px;
-            /* UPDATED: Prevent tabs from shrinking */
             flex-shrink: 0;
         }
 
@@ -208,7 +204,6 @@ $initial_class = $is_register_mode ? 'register-mode' : '';
 
         .content {
             padding: 32px 28px;
-            /* UPDATED: Allow content to scroll if it overflows */
             overflow-y: auto;
         }
 
@@ -216,8 +211,6 @@ $initial_class = $is_register_mode ? 'register-mode' : '';
             text-align: center;
             margin-bottom: 28px;
         }
-
-        /* ... [Rest of your CSS is unchanged] ... */
 
         .brand-logo {
             font-size: 2.5rem;
@@ -529,8 +522,7 @@ $initial_class = $is_register_mode ? 'register-mode' : '';
 
             .mobile-container {
                 max-width: 600px;
-                /* UPDATED: Adjust max-height for new body padding */
-                max-height: calc(100vh - 80px); /* 100vh - (40px * 2) */
+                max-height: calc(100vh - 80px);
             }
 
             .content {
@@ -573,8 +565,7 @@ $initial_class = $is_register_mode ? 'register-mode' : '';
 
             .mobile-container {
                 max-width: 640px;
-                 /* UPDATED: Adjust max-height for new body padding */
-                max-height: calc(100vh - 120px); /* 100vh - (60px * 2) */
+                max-height: calc(100vh - 120px);
             }
 
             .content {
@@ -664,8 +655,7 @@ $initial_class = $is_register_mode ? 'register-mode' : '';
             }
 
             .mobile-container {
-                /* UPDATED: Adjust max-height for new body padding */
-                max-height: calc(100vh - 20px); /* 100vh - (10px * 2) */
+                max-height: calc(100vh - 20px);
             }
 
             .content {
@@ -695,13 +685,9 @@ $initial_class = $is_register_mode ? 'register-mode' : '';
         @media (max-height: 500px) and (orientation: landscape) {
             body {
                 padding: 10px;
-                /* UPDATED: Removed align-items: flex-start and overflow-y: auto */
-                /* The body's default flex settings will now center the constrained box */
             }
 
             .mobile-container {
-                /* UPDATED: Removed margin override, let body center it */
-                /* UPDATED: Ensure max-height is set for this view */
                 max-height: calc(100vh - 20px);
             }
 
@@ -801,6 +787,13 @@ $initial_class = $is_register_mode ? 'register-mode' : '';
                     <i class="fas fa-eye password-toggle" data-target="loginPassword"></i>
                 </div>
                 
+                <!-- FORGOT PASSWORD LINK ADDED HERE -->
+                <div style="text-align: right; margin-top: -8px; margin-bottom: 16px;">
+                    <a href="forgot_password.php" style="color: var(--primary); font-size: 0.85rem; text-decoration: none;">
+                        <i class="fas fa-question-circle"></i> Forgot Password?
+                    </a>
+                </div>
+                
                 <button type="submit" class="submit-btn">
                     Sign In
                 </button>
@@ -812,7 +805,7 @@ $initial_class = $is_register_mode ? 'register-mode' : '';
                     Secure Login
                 </div>
                 <div class="security-list">
-                    <div classs="security-item">
+                    <div class="security-item">
                         <i class="fas fa-check-circle"></i>
                         <span>End-to-end encrypted</span>
                     </div>
@@ -997,6 +990,12 @@ $initial_class = $is_register_mode ? 'register-mode' : '';
                     <div class="input-group">
                         <input type="password" name="password" id="loginPassword" placeholder="Password" required>
                         <i class="fas fa-eye password-toggle" data-target="loginPassword"></i>
+                    </div>
+                    <!-- FORGOT PASSWORD LINK IN LOGIN FORM -->
+                    <div style="text-align: right; margin-top: -8px; margin-bottom: 16px;">
+                        <a href="forgot_password.php" style="color: var(--primary); font-size: 0.85rem; text-decoration: none;">
+                            <i class="fas fa-question-circle"></i> Forgot Password?
+                        </a>
                     </div>
                     <button type="submit" class="submit-btn">Sign In</button>
                 `;
