@@ -99,6 +99,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../css/modern-theme.css">
+    <link rel="icon" href="../logo/m-blues.png" type="image/png">
     <title>MUFFEIA - Edit Post</title>
     
     <!-- Mobile-specific CSS -->

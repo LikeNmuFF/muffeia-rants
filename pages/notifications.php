@@ -37,6 +37,7 @@ $mark_read_stmt->close();
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../css/modern-theme.css">
+    <link rel="icon" href="../logo/m-blues.png" type="image/png">
     <title>MUFFEIA - Notifications</title>
     <style>
         .notifications-container {
@@ -456,16 +457,7 @@ $mark_read_stmt->close();
         </div>
     </div>
 
-    <footer>
-        <div class="footer-content">
-            <p>&copy; <?php echo date("Y"); ?> MUFFEIA @Muffy. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="privacy.php">Privacy Policy</a>
-                <span>•</span>
-                <a href="terms.php">Terms of Service</a>
-            </div>
-        </div>
-    </footer>
+
 
     <script src="../js/mode.js"></script>
     <script>

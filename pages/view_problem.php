@@ -475,16 +475,7 @@ function getSolutionReplies($conn, $solution_id) {
         </div>
     </div>
 
-    <footer>
-        <div class="footer-content">
-            <p>&copy; <?php echo date("Y"); ?> MUFFEIA @Muffy. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="privacy.php">Privacy Policy</a>
-                <span>•</span>
-                <a href="terms.php">Terms of Service</a>
-            </div>
-        </div>
-    </footer>
+
 
     <script src="../js/mode.js"></script>
     <script>
