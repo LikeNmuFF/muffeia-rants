@@ -87,6 +87,8 @@ a:hover {
 .wrapper {
     display: flex;
     min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
 }
 
 .sidebar {
@@ -96,8 +98,12 @@ a:hover {
     padding: 1.5rem 0;
     display: flex;
     flex-direction: column;
-    transition: background-color var(--transition-speed), border-color var(--transition-speed);
+    transition: all var(--transition-speed);
     flex-shrink: 0;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .logo {
@@ -139,6 +145,38 @@ a:hover {
     padding: 2.5rem;
     max-width: 900px;
     margin: 0 auto;
+    width: 100%;
+    transition: padding var(--transition-speed);
+}
+
+@media (max-width: 991px) {
+    .content {
+        padding: 1rem;
+    }
+}
+
+/* Add overlay for mobile navigation */
+.sidebar-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    opacity: 0;
+    transition: opacity var(--transition-speed);
+}
+
+.sidebar-overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+/* Prevent body scroll when sidebar is open */
+body.sidebar-open {
+    overflow: hidden;
 }
 
 .top-bar {
